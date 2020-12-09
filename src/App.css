@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+canvas {
+    border: 2px solid black;
+    margin: 8px 4px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img {
+    margin: 8px 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputs-buttons {
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white(0, 0, 0);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: rgb(0, 0, 0);
+    transform: translateY(-7px);
+}
+
+.input {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 4px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #f8f8f8;
+    color: rgb(0, 0, 0);
+    border: rgb(55, 63, 61) 2px solid;
+}
+
+.input::placeholder {
+    color: #252323;
+}
+
+.colorpicker {
+    width: 250px;
+    padding: 8px 0px;
+    padding-top: -100px;
+    margin: 8px 4px;
+    border: none;
+    background-color: #f8f8f8;
+    color: rgb(0, 0, 0);
+    border: rgb(55, 63, 61) 2px solid;
 }
